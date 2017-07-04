@@ -1,0 +1,37 @@
+@media only screen and (min-width: 601px){
+.all {
+    width: 85%;
+    margin: 0 auto;
+}}
+@media (min-width: 1440px) { 
+  .all {
+    width: 75%;
+    margin: 0 auto;
+    }
+}
+nav{
+    box-shadow: none;
+}
+.nav-wrapper{
+    background-color: #fff;
+}
+
+#logo{
+    margin-top: 8px;
+    float: left;
+}
+nav ul a {
+    color: red;
+    font-weight: bold;
+}
+
+nav ul{
+    float: left;
+}
+
+.menu-left{
+    padding-left: 140px!important;
+}
+.titPlano span{
+font-size: 21px;
+}
