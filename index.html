@@ -1,5 +1,6 @@
-<html>  
+<html>
    <head>
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
@@ -7,80 +8,98 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-      <!-- Jquery Mask -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
       <!-- Arquivo css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Icons -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/ajax-loader.gif">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+      <!-- Jquery Mask -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
    </head>
-   <body>   
-    <div class="all">
-        <header>
+   <body>
+      <div class="all">
+         <header>
             <nav>
-                <div class="nav-wrapper">
-                    <a href="img/logo.png" class="brand-logo"><img class="responsive-img " id="logo" src="img/logo.png"/></a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul class="left hide-on-med-and-down menu-left">
-                        <li><a href="#">Academias</a></li>
-                        <li><a href="#">Como funciona</a></li>
-                        <li><a href="">Para sua empresa</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="collapsible.html">Cadastro</a></li>
-                        <li><a href="mobile.html">Login</a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">Javascript</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
-                    </ul>
-                </div>
+               <div class="nav-wrapper">
+                  <a href="img/logo.png" class="brand-logo"><img class="responsive-img " id="logo" src="img/logo.png"/></a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul class="left hide-on-med-and-down menu-left">
+                     <li><a href="#">Academias</a></li>
+                     <li><a href="#">Como funciona</a></li>
+                     <li><a href="">Para sua empresa</a></li>
+                     <li><a href="">Blog</a></li>
+                  </ul>
+                  <ul class="right hide-on-med-and-down">
+                     <li><a href="collapsible.html">Cadastro</a></li>
+                     <li><a href="mobile.html">Login</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+                     <li><a href="sass.html">Sass</a></li>
+                     <li><a href="badges.html">Components</a></li>
+                     <li><a href="collapsible.html">Javascript</a></li>
+                     <li><a href="mobile.html">Mobile</a></li>
+                  </ul>
+               </div>
             </nav>
-        </header>
-    <section>
-     <div class="s12 banner  width center">
-         <img  class="responsive-img" src="img/imageTop.png"> 
+         </header>
+         <section>
+            <div class="s12 banner  width center">
+               <img  class="responsive-img" src="img/imageTop.png"> 
+            </div>
+         </section>
+         <section id="detalhes">
+            <div class="row center container boxText">
+               <h3> Detalhes do plano </h3>
+               <p class="flow-text">Acesse milhares de academias pagando uma única mensalidade. Você pode utilizar a mesma academia ou academias diferentes todos os dias, basta que o valor da mensalidade seja igual ou menor do que o plano selecionado.   </p>
+               <p class="flow-text">Por exemplo, com a mensalidade de R$ 199,90 você pode frequentar a academia quando desejar. A única limitação é a utilização de uma única academia por dia.</p>
+            </div>
+            <div class="row">
+               <div class="col s12 m4 l4">
+                  <div class="center">
+                     <img src="img/map.png">
+                     <p class="box-caption">Academias Incluídas</p>
+                     <p> Inclui todas as academias cuja mensalidade for menor ou igual �  que você estiver pagando, em qualquer cidade do Brasil ou nos países onde Gympass estiver presente.</p>
+                  </div>
+               </div>
+               <div class="col s12 m4 l4">
+                  <div class="center">
+                     <img src="img/modality.png">
+                     <p class="box-caption">Modalidades incluídas</p>
+                     <p> Inclui todas as modalidades cuja mensalidade for menor ou igual �  que você estiver pagando. Você pode fazer Musculação, Pilates, Yoga, etc?</p>
+                  </div>
+               </div>
+               <div class="col s12 m4 l4">
+                  <div class="center">
+                     <img src="img/payment.png">
+                     <p class="box-caption">Forma de Pagamento</p>
+                     <p> Adesão e pagamento exclusivamente pelo site, via cartão de credito.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="modalidades">
+            <div class="row center">
+               <h3> Modalidades Dispon�veis </h3>
+            </div>
+            <div class="owl-carousel owl-theme">
+               <div class="item">
+                  <h4>1</h4>
+               </div>
+               <div class="item">
+                  <h4>2</h4>
+               </div>
+                <div class="item">
+                  <h4>3</h4>
+               </div>
+                <div class="item">
+                  <h4>4</h4>
+               </div>
+            </div>
+         </section>
+         <section>
+             
+         </section>
       </div>
-    </section>
-    <section id="detalhes">
-        <div class="row center container boxText">
-             <h3> Detalhes do plano </h3>
-            <p class="flow-text">Acesse milhares de academias pagando uma única mensalidade. Você pode utilizar a mesma academia ou academias diferentes todos os dias, basta que o valor da mensalidade seja igual ou menor do que o plano selecionado.   </p> 
-            <p class="flow-text">Por exemplo, com a mensalidade de R$ 199,90 você pode frequentar a academia quando desejar. A única limitação é a utilização de uma única academia por dia.</p>
-         </div>
-         <div class="row">
-            <div class="col s12 m4 l4">
-                <div class="center">
-                    <img src="img/map.png">
-                    <p class="box-caption">Academias Incluídas</p>
-                    <p> Inclui todas as academias cuja mensalidade for menor ou igual à que você estiver pagando, em qualquer cidade do Brasil ou nos países onde Gympass estiver presente.</p>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-               <div class="center">
-                    <img src="img/modality.png">
-                      <p class="box-caption">Modalidades incluídas</p>
-                    <p> Inclui todas as modalidades cuja mensalidade for menor ou igual à que você estiver pagando. Você pode fazer Musculação, Pilates, Yoga, etc?</p>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="center">
-                    <img src="img/payment.png">
-                      <p class="box-caption">Forma de Pagamento</p>
-                      <p> Adesão e pagamento exclusivamente pelo site, via cartão de credito.</p>
-
-                </div>
-            </div>
-        </div>
-     </section>
-     <section id="modalidades">
-         <div class="row center">
-             <h3> Modalidades Dispon�veis </h3>
-        </div>
-
-     </section>
- </div>
    </body>
 </html>

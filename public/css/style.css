@@ -9,13 +9,14 @@
     margin: 0 auto;
     }
 }*/
-nav{
+
+nav {
     box-shadow: none;
 }
-.nav-wrapper{
+.nav-wrapper {
     background-color: #fff;
 }
-#logo{
+#logo {
     margin-top: 8px;
     float: left;
 }
@@ -23,28 +24,28 @@ nav ul a {
     color: red;
     font-weight: bold;
 }
-nav ul{
+nav ul {
     float: left;
 }
-.menu-left{
+.menu-left {
     padding-left: 140px!important;
 }
-h3{
-font-size: 30px;
-font-weight: bold;
+h3 {
+    font-size: 30px;
+    font-weight: bold;
 }
-.boxText{
+.boxText {
     padding: 30px;
     width: 44%;
 }
-.boxText p{
+.boxText p {
     font-weight: 400;
     color: #3e3e3e;
 }
-#modalidades{
+#modalidades {
     background-color: #dadada;
 }
-.box-caption{
+.box-caption {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 5px;
