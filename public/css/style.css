@@ -1,4 +1,4 @@
-@media only screen and (min-width: 601px){
+/*@media only screen and (min-width: 601px){
 .all {
     width: 85%;
     margin: 0 auto;
@@ -8,14 +8,13 @@
     width: 75%;
     margin: 0 auto;
     }
-}
+}*/
 nav{
     box-shadow: none;
 }
 .nav-wrapper{
     background-color: #fff;
 }
-
 #logo{
     margin-top: 8px;
     float: left;
@@ -24,14 +23,30 @@ nav ul a {
     color: red;
     font-weight: bold;
 }
-
 nav ul{
     float: left;
 }
-
 .menu-left{
     padding-left: 140px!important;
 }
-.titPlano span{
-font-size: 21px;
+h3{
+font-size: 30px;
+font-weight: bold;
+}
+.boxText{
+    padding: 30px;
+    width: 44%;
+}
+.boxText p{
+    font-weight: 400;
+    color: #3e3e3e;
+}
+#modalidades{
+    background-color: #dadada;
+}
+.box-caption{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
