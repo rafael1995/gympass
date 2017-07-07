@@ -1,18 +1,25 @@
  $(document).ready(function() {
-
      // Inicializando menu - Mobile
      $(".button-collapse").sideNav();
 
-     //
-     $('').change(function() {
+      // Listando Modalidades
+      listaModalidades();
 
+     // Caso de alterações no filtro - Lista modalidades
+     $('.filter').change(function() {
+    
+      
+     //   $(".owl-item").remove();
+          $owl.trigger('refresh.owl.carousel');
+         listaModalidades();
      });
-     var aquatica = true;
+
+
+     var aquatica = false;
      var notAquatica = true;
-     //
-     listaModalidades(aquatica, notAquatica);
+    
      // Inicializando  Owl Carousel 
-     $('.owl-carousel').owlCarousel({
+    var $owl = $('.owl-carousel').owlCarousel({
          loop: true,
          margin: 10,
          responsiveClass: true,
@@ -26,26 +33,42 @@
                  nav: false
              },
              1000: {
-                 items: 5,
+                 items: 4,
                  nav: true,
                  loop: false
              }
          }
      });
- }); // end Ready
+     $('.limpaEspacos').blur(function () {
+         $(this).val($(this).val().trim());
+    });
 
- function listaModalidades(aquatica, notAquatica) {
+
+
+ function listaModalidades() {
+  
      json = $.getJSON("classes.json", function(obj) {
          for (i = 0; i < obj.classes.length; i++) {
-             if (notAquatica && aquatica) {
-                 console.log("tudo");
-             } else if (!notAquatica && aquatica) {
-                 console.log("Apenas aquatica");
-             } else if (notAquatica && !aquatica) {
-                 console.log("Apenas Não Aquatica");
-             } else {
-                 console.log("tudo");
+             if($('#scltAquatico').is(':checked') && (obj.classes[i].type=="aquatic")){
+               // $(".owl-stage").empty();
+                $("<div class='item col s12 m4 l4 itemCategoria'>")
+                $('#carousel')
+                    .owlCarousel('add',
+                        "<div class='item col s12 m4 l4 itemCategoria'>" +
+                             "<div class='center'>" +
+                                "<h4>"+obj.classes[i].title+"</h4>" +
+                                "<p>"+obj.classes[i].description+ "</p>" +
+                             "</div>"+
+                        " </div>"
+                    )
+                    .owlCarousel('update');
              }
+              else if($('#scltNotAquatico').is(':checked') && (obj.classes[i].type=="non-aquatic")){
+                 console.log(obj.classes[i].title);
+             } 
          } // end for
      }); // end getJson
+     
  }
+
+  }); // end Ready
